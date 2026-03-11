@@ -1,13 +1,3 @@
-# orca-info
-
-# TEMPLATE
-1. Create project directory
-2. `git init && git pull git@github.com:acryps/template.git`
-3. Replace `orca-info` and `5555` everywhere
-4. Replace favicon
-5. Create project on git remote
-6. Remove this section
-
 ## Server
 Backend
 
