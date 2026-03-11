@@ -17,5 +17,4 @@ export const applicationStyle = () => style('body')(
 				display('block')
 			)
 		)
-	)
-);
+    );
