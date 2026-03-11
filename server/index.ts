@@ -24,5 +24,5 @@ DbClient.connectedClient.connect().then(async () => {
 
 	ViewModel.globalFetchingContext = database;
 
-	app.start(+process.env.PORT! || {{PORT}});
+	app.start(+process.env.PORT! || 5555);
 });

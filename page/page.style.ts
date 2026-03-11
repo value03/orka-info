@@ -1,7 +1,7 @@
 import { root, child, padding, margin, display, position, top } from "@acryps/style";
 import { homeStyle } from "./home/index.style";
 
-export const applicationStyle = () => root(
+export const orca-infoStyle = () => root(
 	child('body',
 		padding(0),
 		margin(0),

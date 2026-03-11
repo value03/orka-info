@@ -4,7 +4,7 @@ export class PageComponent extends Component {
 	render(child) {
 		return <ui-page>
 			<ui-navigation>
-				{{APPLICATION}}
+				orca-info
 			</ui-navigation>
 
 			{child}

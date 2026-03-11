@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y git
 WORKDIR /usr/src/app
 COPY . .
 
-# build application
+# build orca-info
 RUN npm ci
 RUN cd server ; npm ci ; cd ..
 RUN cd page ; npm ci ; cd ..
