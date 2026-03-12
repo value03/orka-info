@@ -1,10 +1,13 @@
 import { hex } from "@acryps/style";
 
-export const primaryColor = hex('4339ff');
-export const primaryContrastColor = hex('fff');
 
-export const secondaryColor = hex('727272');
-export const secondaryContrastColor = hex('fff');
+export const violet = hex('9A6FF6');
+export const rot = hex('EA3222');
+export const blau = hex('3E7BF7');
+export const braun = hex('868F6B');
+export const gelb = hex('FEFB53');
+export const tuerkis = hex('C8FCF3');
+export const terkis_complementary = hex('FECACA');
 
-export const pageColor = hex('000');
-export const pageContrastColor = hex('fff');
+export const primaryColor = violet;
+export const secondaryColor = hex('fff');

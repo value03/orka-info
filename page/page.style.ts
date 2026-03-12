@@ -1,6 +1,8 @@
-import { style, child, padding, margin, display, position, top, height, px, width, backgroundColor, hex, url, background } from "@acryps/style";
+import { style, child, padding, margin, display, position, top, height, px, width, backgroundColor, hex, url, background, left, boxSizing, fill, justifyItems, alignItems, justifyContent, vh } from "@acryps/style";
 import { homeStyle } from "./home/index.style";
-import { maskImage } from "./style.extensions";
+import { maskImage, maskPosition, maskRepeat, maskSize } from "./style.extensions";
+import { primaryColor, secondaryColor, terkis_complementary, tuerkis } from "./index.style";
+import { percentage, Percentage } from "@acryps/style/.built/declarations/primitives";
 
 export const applicationStyle = () => style('body')(
     padding(0),
@@ -10,19 +12,36 @@ export const applicationStyle = () => style('body')(
         homeStyle(),
 
         display('block'),
+        backgroundColor(secondaryColor),
 
         child('ui-navigation')(
-            position('sticky'),
+            //position('sticky'),
             top(0),
 
-            display('block'),
+            display('flex'),
+            justifyContent('space-between'),
+            padding(px(20)),
+
+            backgroundColor(secondaryColor),
 
             child('ui-logo')(
-                height(px(200)),
-                width(px(200)),
-                backgroundColor(hex("#FCD6C7")),
+                display('block'),
+                width(px(150)),
+
+                // color
+                backgroundColor(primaryColor),
+
+                // masking
                 maskImage(url('assets/image1.png')),
+                maskSize('contain'),
+                maskPosition('center'),
+                maskRepeat('no-repeat')
+                ),
+            child('svg')(
+                child('circle')(
+                    fill(primaryColor),
                 )
+            )
 			)
 		)
     );
