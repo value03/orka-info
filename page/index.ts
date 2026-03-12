@@ -2,13 +2,13 @@ import { Component, PathRouter, Router } from '@acryps/page';
 import { registerDirectives } from '@acryps/page-default-directives';
 import { PageComponent } from './page';
 import { HomePage } from './home';
-import { orca-infoStyle } from './page.style';
+import { applicationStyle } from './page.style';
 
 // injected by esbuild
 declare const buildDate: string;
 declare const buildCommit: string;
 
-export class orca-info {
+export class Application {
 	static router: Router;
 
 	static async main() {
@@ -19,7 +19,7 @@ export class orca-info {
 		registerDirectives(Component, this.router);
 
 		// load styles
-		orca-infoStyle().apply();
+		applicationStyle().apply();
 
 		// render orca-info
 		this.router.host(document.body);
@@ -32,4 +32,4 @@ export class orca-info {
 	}
 }
 
-orca-info.main();
+Application.main();

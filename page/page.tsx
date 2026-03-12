@@ -4,7 +4,7 @@ export class PageComponent extends Component {
 	render(child) {
 		return <ui-page>
 			<ui-navigation>
-				orka-info
+				<ui-logo></ui-logo>
 			</ui-navigation>
 
 			{child}
